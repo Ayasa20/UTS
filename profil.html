@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ayasahabat</title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/logo-32.png" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      aria-label="Eleventh navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="./assets/image/logo-32.png" alt="Logo" /> Ayasahabat</a
+        >
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample09"
+          aria-controls="navbarsExample09"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample09">
+          <ul class="navbar-nav col-lg-8 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="daftar_komik.html">Daftar Komik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookmark.html">Bookmark</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="profil.html">Profil</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav col-lg-4 justify-content-lg-end">
+            <li class="nav-item">
+              <form role="search">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Cari Komik"
+                  aria-label="Search"
+                />
+              </form>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn-nav btn-primary">Masuk</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn-nav btn-primary">Daftar</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="profil">
+      <div class="profil-content">
+        <div class="d-flex justify-content-center" style="padding-bottom: 30px">
+          <h1 style="color: #0d0d0d">Profil</h1>
+        </div>
+        <div class="user" style="padding: 0px 100px">
+          <div class="row mb-3">
+            <div class="profil-item col-xxl-4 themed-grid-col">
+              <div class="row mb-3">
+                <div class="col-md-4 themed-grid-col">
+                  <div class="profil-photo">
+                    <img
+                      class="profil-foto"
+                      src="./assets/image/Astro-Drink.jpg"
+                      alt="Foto Profil"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-8 themed-grid-col">
+                  <div class="container-profil themed-container">
+                    <h3>Ganti Foto Profil</h3>
+                  </div>
+                  <div class="container-profil themed-container">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="formFile"
+                      style="max-width: 18%"
+                    />
+                  </div>
+                  <div class="container-profil themed-container">
+                    <input
+                      class="btn btn-primary"
+                      type="submit"
+                      value="Upload"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profil-item col-xxl-4 themed-grid-col">
+              <h3>Ubah Username Anda</h3>
+              <div class="tab-item">
+                <div class="form-group row">
+                  <label for="name-input" class="col-md-3"
+                    >Username Saat Ini</label
+                  >
+                  <div class="col-md-9">
+                    <span class="show">Ayasa</span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="name-input" class="col-md-3">Username Baru</label>
+                  <div class="col-md-9">
+                    <input
+                      class="profil-form form-control"
+                      type="text"
+                      value=""
+                      name="user-new-name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="name-input-submit" class="col-md-3"></label>
+                  <div class="col-md-9">
+                    <input
+                      class="btn btn-primary"
+                      type="submit"
+                      value="Submit"
+                      id="name-input-submit"
+                      name="account-form-submit"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profil-item col-xxl-4 themed-grid-col">
+              <h3>Ubah Email Anda</h3>
+              <div class="tab-item">
+                <div class="form-group row">
+                  <label for="name-input" class="col-md-3"
+                    >Email Saat Ini</label
+                  >
+                  <div class="col-md-9">
+                    <span class="show">aditya.yoga.799@gmail.com</span>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="name-input" class="col-md-3">Email Baru</label>
+                  <div class="col-md-9">
+                    <input
+                      class="profil-form form-control"
+                      type="text"
+                      value=""
+                      name="user-new-name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="name-input-submit" class="col-md-3"></label>
+                  <div class="col-md-9">
+                    <input
+                      class="btn btn-primary"
+                      type="submit"
+                      value="Submit"
+                      id="name-input-submit"
+                      name="account-form-submit"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="profil-item col-xxl-4 themed-grid-col">
+              <h3>Ubah Kata Sandi Anda</h3>
+              <div class="tab-item">
+                <div class="form-group row">
+                  <label for="name-input" class="col-md-3"
+                    >Kata Sandi Saat Ini</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      class="profil-form form-control"
+                      type="text"
+                      value=""
+                      name="user-new-name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="name-input" class="col-md-3"
+                    >Kata Sandi Baru</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      class="profil-form form-control"
+                      type="text"
+                      value=""
+                      name="user-new-name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="name-input" class="col-md-3"
+                    >Konfirmasi Kata Sandi</label
+                  >
+                  <div class="col-md-9">
+                    <input
+                      class="profil-form form-control"
+                      type="text"
+                      value=""
+                      name="user-new-name"
+                    />
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="name-input-submit" class="col-md-3"></label>
+                  <div class="col-md-9">
+                    <input
+                      class="btn btn-primary"
+                      type="submit"
+                      value="Submit"
+                      id="name-input-submit"
+                      name="account-form-submit"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <footer class="py-3 my-4">
+          <div class="nav text-center border-bottom" style="padding: 0px 250px">
+            <p>
+              "Menemukan Keseruan di Setiap Halaman, Menghidupkan Imajinasi
+              dengan Setiap Cerita yang Penuh Warna dan Petualangan!"
+            </p>
+          </div>
+          <p class="text-center text-body-secondary">©2024 Ayasahabat</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

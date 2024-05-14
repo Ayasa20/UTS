@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ayasahabat</title>
+    <link rel="icon" type="image/x-icon" href="./assets/image/logo-32.png" />
+  </head>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg fixed-top"
+      aria-label="Eleventh navbar example"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="./assets/image/logo-32.png" alt="Logo" /> Ayasahabat</a
+        >
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample09"
+          aria-controls="navbarsExample09"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample09">
+          <ul class="navbar-nav col-lg-8 justify-content-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="daftar_komik.html">Daftar Komik</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="bookmark.html">Bookmark</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav col-lg-4 justify-content-lg-end">
+            <li class="nav-item">
+              <form role="search">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Cari Komik"
+                  aria-label="Search"
+                />
+              </form>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn-nav btn-primary">Masuk</button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn-nav btn-primary">Daftar</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="banner">
+      <div
+        id="carouselExample"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        style="padding: 50px 5px"
+      >
+        <div class="container c-container">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+              <img
+                src="./assets/image/Banner_Solev.png"
+                class="d-block w-100"
+                alt="Solo Leveling"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img
+                src="./assets/image/Banner_Damn.png"
+                class="d-block w-100"
+                alt="Damn Reincarnation"
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+              <img
+                src="./assets/image/Banner_My_School_Life.webp"
+                class="d-block w-100"
+                alt="My School Life"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="hot">
+      <div class="hot-content">
+        <div class="d-flex justify-content-center" style="padding-bottom: 30px">
+          <h1 style="color: #0d0d0d">Sedang Hangat</h1>
+        </div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <div class="series-card">
+                <a href="">
+                  <div class="images-home">
+                    <span class="manga-title-badges manhwa">MANHWA</span>
+                    <img
+                      class="thumb-komik"
+                      src="./assets/image/Swordmasters-Youngest-Son.jpg"
+                      alt="Swordmasters Youngest Son"
+                    />
+                  </div>
+                </a>
+                <div class="series-box">
+                  <a href="">
+                    <h6 class="series-title">Swordmasters Youngest Son</h6></a
+                  >
+                  <a href=""> <p class="series-badge">Chapter 110</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="series-card">
+                <a href="">
+                  <div class="images-home">
+                    <span class="manga-title-badges manhua">MANHUA</span>
+                    <img
+                      class="thumb-komik"
+                      src="./assets/image/Demonic_Emperor.webp"
+                      alt="Demonic Emperor"
+                    />
+                  </div>
+                </a>
+                <div class="series-box">
+                  <a href=""> <h6 class="series-title">Demonic Emperor</h6></a>
+                  <a href=""> <p class="series-badge">Chapter 543</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="series-card">
+                <a href="">
+                  <div class="images-home">
+                    <span class="manga-title-badges manhwa">MANHWA</span>
+                    <img
+                      class="thumb-komik"
+                      src="./assets/image/Solo_Leveling.png"
+                      alt="Solo Leveling"
+                    />
+                  </div>
+                </a>
+                <div class="series-box">
+                  <a href=""> <h6 class="series-title">Solo Leveling</h6></a>
+                  <a href=""> <p class="series-badge">Chapter 179</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="series-card">
+                <a href="">
+                  <div class="images-home">
+                    <span class="manga-title-badges manhwa">MANHWA</span>
+                    <img
+                      class="thumb-komik"
+                      src="./assets/image/My_School_Life.webp"
+                      alt="My School Life"
+                    />
+                  </div>
+                </a>
+                <div class="series-box">
+                  <a href="">
+                    <h6 class="series-title">
+                      My School Life Pretending to be a Worthless Person
+                    </h6></a
+                  >
+                  <a href=""> <p class="series-badge">Chapter 60</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="series-card">
+                <a href="">
+                  <div class="images-home">
+                    <span class="manga-title-badges manhwa">MANHWA</span>
+                    <img
+                      class="thumb-komik"
+                      src="./assets/image/Damn_Reincarnation.jpg"
+                      alt="Damn Reincarnation"
+                    />
+                  </div>
+                </a>
+                <div class="series-box">
+                  <a href="">
+                    <h6 class="series-title">Damn Reincarnation</h6></a
+                  >
+                  <a href=""> <p class="series-badge">Chapter 81</p></a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="series-card">
+                <a href="">
+                  <div class="images-home">
+                    <span class="manga-title-badges manga">MANGA</span>
+                    <img
+                      class="thumb-komik"
+                      src="./assets/image/One-Piece.jpg"
+                      alt="One Piece"
+                    />
+                  </div>
+                </a>
+                <div class="series-box">
+                  <a href=""> <h6 class="series-title">One Piece</h6></a>
+                  <a href=""> <p class="series-badge">Chapter 1113</p></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="new">
+      <div class="new-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <div class="new-comic">
+                <div
+                  class="d-flex justify-content-center"
+                  style="padding-bottom: 30px"
+                >
+                  <h2 style="color: #0d0d0d">Komik Terbaru</h2>
+                </div>
+                <div class="container text-center">
+                  <div class="row">
+                    <div class="col">
+                      <div class="series-card">
+                        <a href="">
+                          <div class="images-home">
+                            <span class="manga-title-badges manhua"
+                              >MANHUA</span
+                            >
+                            <img
+                              class="thumb-komik"
+                              src="./assets/image/Apotheosis.jpg"
+                              alt="Apotheosis"
+                            />
+                          </div>
+                        </a>
+                        <div class="series-box">
+                          <a href="">
+                            <h6 class="series-title">Apotheosis</h6></a
+                          >
+                          <a href="">
+                            <p class="series-badge">Chapter 1190</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="series-card">
+                        <a href="">
+                          <div class="images-home">
+                            <span class="manga-title-badges manhwa"
+                              >MANHWA</span
+                            >
+                            <img
+                              class="thumb-komik"
+                              src="./assets/image/After-The-Fall.jpg"
+                              alt="The World After The Fall"
+                            />
+                          </div>
+                        </a>
+                        <div class="series-box">
+                          <a href="">
+                            <h6 class="series-title">
+                              The World After The Fall
+                            </h6></a
+                          >
+                          <a href="">
+                            <p class="series-badge">Chapter 126</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="series-card">
+                        <a href="">
+                          <div class="images-home">
+                            <span class="manga-title-badges manga">MANGA</span>
+                            <img
+                              class="thumb-komik"
+                              src="./assets/image/gimai-seikatsu.jpg"
+                              alt="Gimai Seikatsu"
+                            />
+                          </div>
+                        </a>
+                        <div class="series-box">
+                          <a href="">
+                            <h6 class="series-title">Gimai Seikatsu</h6></a
+                          >
+                          <a href="">
+                            <p class="series-badge">Chapter 19.2</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="series-card">
+                        <a href="">
+                          <div class="images-home">
+                            <span class="manga-title-badges manhwa"
+                              >MANHWA</span
+                            >
+                            <img
+                              class="thumb-komik"
+                              src="./assets/image/Omniscient-Readers-Viewpoint.jpg"
+                              alt="Omniscient Readers Viewpoint"
+                            />
+                          </div>
+                        </a>
+                        <div class="series-box">
+                          <a href="">
+                            <h6 class="series-title">
+                              Omniscient Readers Viewpoint
+                            </h6></a
+                          >
+                          <a href="">
+                            <p class="series-badge">Chapter 209</p></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="populer-comic">
+                <div
+                  class="d-flex justify-content-center"
+                  style="padding-bottom: 10px"
+                >
+                  <h2 style="color: #0d0d0d">Komik Terpopuler</h2>
+                </div>
+                <div class="populer-content">
+                  <ul style="list-style: none; padding-left: 0">
+                    <li>
+                      <div class="ctr">
+                        <span>1</span>
+                      </div>
+                      <div class="imgseries">
+                        <a class="series" href="">
+                          <img
+                            src="./assets/image/Omniscient-Readers-Viewpoint.jpg"
+                            class="list-trending"
+                            alt="Omniscient Readers Viewpoint"
+                          />
+                        </a>
+                      </div>
+                      <div class="leftseries">
+                        <a href=""> <h5>Omniscient Readers Viewpoint</h5></a>
+                        <span class="genre">
+                          <b>Genres</b>: <a href="" rel="tag">Action</a>,
+                          <a href="" rel="tag">Fantasy</a>,
+                          <a href="" rel="tag">Adventure</a>
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="ctr">
+                        <span>2</span>
+                      </div>
+                      <div class="imgseries">
+                        <a class="series" href="">
+                          <img
+                            src="./assets/image/Swordmasters-Youngest-Son.jpg"
+                            class="list-trending"
+                            alt="The World After The Fall"
+                          />
+                        </a>
+                      </div>
+                      <div class="leftseries">
+                        <a href=""> <h5>Swordmasters Youngest Son</h5></a>
+                        <span class="genre">
+                          <b>Genres</b>: <a href="" rel="tag">Action</a>,
+                          <a href="" rel="tag">Martial Arts</a>,
+                          <a href="" rel="tag">Fantasy</a>
+                        </span>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="ctr">
+                        <span>3</span>
+                      </div>
+                      <div class="imgseries">
+                        <a class="series" href="">
+                          <img
+                            src="./assets/image/Apotheosis.jpg"
+                            class="list-trending"
+                            alt="Apotheosis"
+                          />
+                        </a>
+                      </div>
+                      <div class="leftseries">
+                        <a href=""> <h5>Apotheosis</h5></a>
+                        <span class="genre">
+                          <b>Genres</b>: <a href="" rel="tag">Action</a>,
+                          <a href="" rel="tag">Martial Arts</a>,
+                          <a href="" rel="tag">Fantasy</a>
+                        </span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <footer class="py-3 my-4">
+          <div class="nav text-center border-bottom" style="padding: 0px 250px">
+            <p>
+              "Menemukan Keseruan di Setiap Halaman, Menghidupkan Imajinasi
+              dengan Setiap Cerita yang Penuh Warna dan Petualangan!"
+            </p>
+          </div>
+          <p class="text-center text-body-secondary">© 2024 Ayasahabat</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

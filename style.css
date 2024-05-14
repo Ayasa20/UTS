@@ -1,0 +1,312 @@
+body {
+  background-color: #f1f1f2;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.navbar {
+  background-color: #f1f1f2;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  border-bottom: solid 4px #1995ad;
+  padding-bottom: 3px;
+}
+
+.btn-nav {
+  background-color: #a1d6e2;
+  margin: 5px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-nav:hover {
+  background-color: #1995ad;
+  color: white;
+}
+
+.hot {
+  background-color: #bcbabe;
+  padding-top: 50px;
+}
+
+.hot-content {
+  background-color: #f1f1f2;
+  margin: 0px 110px;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.images-home {
+  width: 150px;
+  height: 216px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.images-home img {
+  width: 100%;
+  height: 216px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.images-home img:hover {
+  transform: scale(1.07);
+}
+
+.series-title,
+.series-badge {
+  color: #2a2a2a;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.manga-title-badges.manhwa {
+  z-index: 1;
+  position: absolute;
+  color: #fffffe;
+  background: blue;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 11px;
+}
+
+.manga-title-badges.manhua {
+  z-index: 1;
+  position: absolute;
+  color: #fffffe;
+  background: orange;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 11px;
+}
+
+.manga-title-badges.manga {
+  z-index: 1;
+  position: absolute;
+  color: #fffffe;
+  background: red;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 11px;
+}
+
+.new {
+  background-color: #bcbabe;
+  padding: 60px 30px;
+}
+
+.new-comic,
+.populer-comic,
+.bookmark-comic,
+.history-comic,
+.about-content,
+.profil-content {
+  background-color: #f1f1f2;
+  border-radius: 30px;
+  padding: 20px 5px;
+}
+
+.ctr {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 1em;
+  color: black;
+  position: relative;
+  top: 45px;
+  left: 10px;
+  border: 0.5px solid #888;
+  border-radius: 3px;
+}
+
+.imgseries {
+  margin-left: 50px;
+  float: left;
+  overflow: hidden;
+  width: 58px;
+  max-height: 72px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.list-trending {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0px;
+  float: none;
+}
+
+.genre,
+.genre a {
+  color: #2a2a2a;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer {
+  padding-top: 20px;
+  margin: -20px 0px;
+}
+
+.filter {
+  padding: 6px 5px;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  border-radius: 2px;
+}
+
+.filter-item {
+  width: 110px;
+  border-radius: 10px;
+  background: #a1d6e2;
+  border: 2px solid #0d0d0d;
+}
+
+.dropdown-menu {
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  min-width: 200px;
+  padding: 5px;
+}
+
+.dropdown-menu li {
+  margin: 5px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.submit button {
+  background-color: #1995ad;
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid #0d0d0d;
+}
+
+.images {
+  margin-left: 10px;
+  width: 200px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.images img {
+  width: 100%;
+  height: 280px;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.images img:hover {
+  transform: scale(1.1);
+}
+
+.history-content li {
+  border-bottom: 1px solid black;
+  padding: 0px;
+}
+
+.history-content a {
+  color: #0d0d0d;
+  padding-left: 5px;
+  display: block;
+}
+
+.history-content a:hover {
+  background: #1995ad;
+}
+
+a {
+  text-decoration: none;
+  color: #0d0d0d;
+}
+
+.profil-foto {
+  width: 250px;
+  height: auto;
+}
+
+.container-profil {
+  padding: 10px 0px;
+}
+
+.form-group {
+  max-width: 70%;
+  padding: 10px 0px;
+}
+
+.profil-form {
+  max-width: 60%;
+}
+
+.profil-item {
+  padding: 20px 0px;
+  border-top: 1px solid black;
+}
+
+.about,
+.profil,
+.bookmark {
+  background-color: #bcbabe;
+  padding: 0px 120px;
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
+.about-text {
+  padding: 30px 150px;
+  text-align: justify;
+}
+
+.about-us {
+  border-bottom: 1px solid black;
+  padding-top: 50px;
+}
+
+.about-item {
+  padding-top: 20px;
+}
+
+.about-item li {
+  padding-top: 5px;
+}
+
+.about-item a {
+  font-size: 40px;
+  padding: 0px 10px;
+}
+
+.btn {
+  background-color: #a1d6e2;
+  color: #0d0d0d;
+}
+
+.btn:hover {
+  background-color: #1995ad;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #1995ad;
+  border-color: white;
+}
+
+.pagination .page-item .page-link {
+  background-color: #a1d6e2;
+  color: black;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #1995ad;
+}
